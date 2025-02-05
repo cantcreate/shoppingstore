@@ -1,0 +1,21 @@
+body {
+    margin: 5px;
+    padding: 5px;
+}
+.heading {
+    display: flex;
+}
+.logoimage img {
+    height: 4cm;
+    width: 4cm;
+}
+.logoimage button {
+    border: none;
+}
+.features li {
+    list-style: none;
+}
+.heading .features {
+    display: flex;
+    float: right;
+}
