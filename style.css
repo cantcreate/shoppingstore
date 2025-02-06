@@ -4,18 +4,28 @@ body {
 }
 .heading {
     display: flex;
+    justify-content: space-between;
+    border: 2px solid darkgreen;
 }
 .logoimage img {
-    height: 4cm;
-    width: 4cm;
+    height: 2cm;
+    width: 2cm;
+    justify-items: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .logoimage button {
     border: none;
 }
+.heading .features {
+    gap: 200px;
+}
 .features li {
     list-style: none;
+
 }
-.heading .features {
+.heading .features ul {
     display: flex;
-    float: right;
+    gap: 120px;
+    margin-right: 10px;
 }
