@@ -6,7 +6,9 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: darkgreen;
-    
+    padding: 20px;
+    position: sticky;
+    top: 0;
 }
 .heading:hover {
     box-shadow: 4px 4px 3px #8B4513;
@@ -31,13 +33,18 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     color: aliceblue;
+    margin-bottom: 50px;
 
 }
 .heading .features ul {
     display: flex;
     gap: 120px;
     margin-right: 10px;
+    margin-bottom: 40px;
 }
+
 .heading .features ul li:hover {
     text-decoration: underline;
+}
+.searchbutton {
 }
