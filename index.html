@@ -4,38 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pasal</title>
-    <link rel="icon" href="image/pasallogo.png">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9c0865ae19.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div class="heading">
-        <div class="containeditem">
-        <div class="logoimage">
-            <button>
-                <img src="image/pasallogo.png" alt="logoimage">
-            </button>
-        </div>
-        <div class="features">
-            <ul>
-                <li>Home</li>
-                <li>Shop</li>
-                <li>Blog</li>
-                <li>About</li>
-                <li>Contact Us</li>
-            </ul>    
-        </div>
+        <div class="logobtn">
+            <button onclick="refresh()">
+                <img src="image/pasallogo.png" alt="logobotton">
+            </button>    
 
-        <div class="searchbutton">
-        <form action="search_results.html" method="GET">
-            <input type="text" name="query" placeholder="Search..." required>
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+            <script>
+                function refresh() {
+                    location.reload();
+                }
+            </script>
         </div>
-        </div>
-        </div>
+        <div class="contentitem">
+            <div class="listitem">
+                <ul>
+                    <li>Home</li>
+                    <li>Shop</li>
+                    <li>Blog</li>
+                    <li>About</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+                <div class="searchbutton">
+                    <form action="search_results.html" method="GET">
+                        <input type="text" name="query" placeholder="Search..." required>
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                </div>
+            </div>
     </div>
-    
     
 </body>
 </html>

@@ -1,50 +1,51 @@
 body {
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
 }
 .heading {
     display: flex;
-    justify-content: space-between;
-    background-color: darkgreen;
     padding: 20px;
-    position: sticky;
-    top: 0;
+    border: 1px solid darkgreen;
+    background-color: darkgreen;
+    gap: 900px;
 }
-.heading:hover {
-    box-shadow: 4px 4px 3px #8B4513;
+
+.heading .logobtn img {
+    height: 2cm;
+    width:  2cm;
 }
-.logoimage button {
+
+.heading .logobtn button {
     border: none;
 }
-.logoimage button:hover {
-    box-shadow: 2px 2px 2px grey;
-}
-.logoimage img {
-    height: 2cm;
-    width: 2cm;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.heading .features {
-    gap: 200px;
-}
-.features li {
-    list-style: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-    color: aliceblue;
-    margin-bottom: 50px;
-
-}
-.heading .features ul {
+.contentitem {
     display: flex;
-    gap: 120px;
-    margin-right: 10px;
-    margin-bottom: 40px;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    
 }
 
-.heading .features ul li:hover {
+.contentitem .listitem ul {
+    gap: 35px;
+    display: flex;
+    text-align: end;
+    color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    margin: 10px;
+}
+.contentitem .listitem ul li {
+    list-style: none;
+
+}
+.contentitem .listitem ul li:hover {
     text-decoration: underline;
 }
-.searchbutton {
+.contentitem {
+    align-items: center;
 }
+.contentitem .searchitem form {
+    margin-top: 10px;
+}
+
+
